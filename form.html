@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    <title>Side hustle Form</title>
+</head>
+<body>
+    <p id="submission-text">Form Submit Successfully</p>
+    <form action="#" method="post">
+        <fieldset>
+            <div>
+                <label for="">Name:
+                    <input type="text" name="" id="" required>
+                </label>
+            </div>
+
+            <div>
+                <label for="">Email:
+                    <input type="email" name="" id="" required>
+                </label>
+            </div>
+            
+            <div>
+                <label for="">Phone:
+                    <input type="tel" name="" id="" required>
+                </label>
+            </div>
+
+            <div>
+                <label for="male">Gender:
+                    <input type="radio" name="gender" id="male" value="male" >male
+                </label>
+                <label for="female">
+                    <input type="radio" name="gender" id="female" value="female">female
+                </label>
+            </div>
+
+            <div>
+                <label for="">Password:</label>
+                <input type="password"  name="password" id="password"  required>
+            </div>
+
+            <button type="submit">Submit</button>
+
+        </fieldset>
+    </form>
+
+    <script>
+        const form = document.querySelector('form');
+        const submissiontext =document .querySelector (submission-text);
+        form .addEventListener ('submit', (e) =>{
+            e.preventDefault();
+            submissiontext .classList. add('show');
+            setTimeout(() => form.submit(), 2000);
+                
+            
+        }
+        )
+    </script>
+</body>
+</html>

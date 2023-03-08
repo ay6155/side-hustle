@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+
+body{
+    margin:0;
+    padding:0;
+    background-color: #75c267;
+    display: grid;
+    place-items: center;
+}
+
+form{
+    outline:0;
+    border:none;
+    padding:2em;
+}
+
+fieldset{
+    border: none;
+}
+
+div{
+    padding:1em;
+    margin-bottom: 1em;
+}
+
+
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='password']{
+    border: none;
+    outline: none;
+}
+
+button{
+    display: block;;
+   
+    margin: 0 auto;
+    border:none;
+    padding:0.9em 1em;
+}
+
+#submission-text{
+    display: none;
+}
